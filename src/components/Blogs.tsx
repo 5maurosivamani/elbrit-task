@@ -1,8 +1,8 @@
 import React from "react";
 import BlogCard from "./BlogCard";
 
-import blogOne from "../assets/blog1.png";
-import blogTwo from "../assets/blog2.png";
+import blogOne from "../assets/blog1.webp";
+import blogTwo from "../assets/blog2.webp";
 import { keyGenerator } from "@/utils/generateId";
 
 function Blogs() {

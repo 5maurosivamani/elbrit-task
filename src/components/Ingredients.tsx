@@ -1,10 +1,10 @@
 import React from "react";
 import IngredientCard from "./IngredientCard";
-import IngImage1 from "../assets/ing-bg-1.png";
-import IngImage2 from "../assets/ing-bg-2.png";
-import IngImage3 from "../assets/ing-bg-3.png";
-import IngImage4 from "../assets/ing-bg-4.png";
-import IngImage5 from "../assets/ing-bg-5.png";
+import IngImage1 from "../assets/ing-bg-1.webp";
+import IngImage2 from "../assets/ing-bg-2.webp";
+import IngImage3 from "../assets/ing-bg-3.webp";
+import IngImage4 from "../assets/ing-bg-4.webp";
+import IngImage5 from "../assets/ing-bg-5.webp";
 
 const IngredientsData = [
   {

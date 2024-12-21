@@ -3,9 +3,9 @@ import ContactCard from "./ContactCard";
 import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
 import logo from "../../public/images/logo.png";
-import phone from "../assets/phone.png"
-import email from "../assets/email.png"
-import location from "../assets/location.png"
+import phone from "../assets/phone.webp"
+import email from "../assets/email.webp"
+import location from "../assets/location.webp"
 
 function Footer() {
   return (

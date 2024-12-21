@@ -1,12 +1,12 @@
 import React from "react";
 import FeatureCard from "./FeatureCard";
 
-import clinicIcon from "../assets/clinic.png";
-import vegIcon from "../assets/veg.png";
-import flagIcon from "../assets/made-in.png";
-import gmoIcon from "../assets/gmo.png";
-import noRiskIcon from "../assets/no-risk.png";
-import shippingIcon from "../assets/shipping.png";
+import clinicIcon from "../assets/clinic.webp";
+import vegIcon from "../assets/veg.webp";
+import flagIcon from "../assets/made-in.webp";
+import gmoIcon from "../assets/gmo.webp";
+import noRiskIcon from "../assets/no-risk.webp";
+import shippingIcon from "../assets/shipping.webp";
 import { keyGenerator } from "@/utils/generateId";
 
 const FeaturesData = [

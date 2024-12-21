@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FaCapsules, FaWeight } from "react-icons/fa";
 import { IconType } from "react-icons";
 import { FaBowlFood } from "react-icons/fa6";
-import proBioticTablets from "../assets/probiatics-tablets.png";
+import proBioticTablets from "../assets/probiatics-tablets.webp";
 
 function Banner() {
   return (
