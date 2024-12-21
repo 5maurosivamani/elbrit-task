@@ -1,8 +1,7 @@
-import React from "react";
-import ContactCard from "./ContactCard";
 import Image from "next/image";
+import logo from "../assets/logo.webp";
+import ContactCard from "./ContactCard";
 import { FaLocationDot } from "react-icons/fa6";
-import logo from "../../public/images/logo.png";
 import phone from "../assets/phone.webp"
 import email from "../assets/email.webp"
 import location from "../assets/location.webp"

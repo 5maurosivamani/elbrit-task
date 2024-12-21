@@ -1,14 +1,9 @@
-import Image, { StaticImageData } from "next/image";
+import { IngredientCardProps } from "@/types/IngredientCard";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-type IngredientCardType = {
-  title: string;
-  description: string;
-  image: StaticImageData;
-};
-
-function IngredientCard({ title, description, image }: IngredientCardType) {
+function IngredientCard({ title, description, image }: IngredientCardProps) {
 
   return (
     <div className="flex justify-center ">

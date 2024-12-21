@@ -1,13 +1,7 @@
-import Image, { StaticImageData } from "next/image";
-import React from "react";
+import { ContactCardProps } from "@/types/ContactCard";
+import Image from "next/image";
 
-type CardPropType = {
-  title: string;
-  content: string;
-  icon: StaticImageData;
-};
-
-function ContactCard({ title, content, icon }: CardPropType) {
+function ContactCard({ title, content, icon }: ContactCardProps) {
   return (
     <div className="bg-[#215d72]  px-5 py-3 rounded-lg flex items-center space-x-3">
       <div className="text-white">

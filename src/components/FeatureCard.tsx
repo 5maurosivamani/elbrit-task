@@ -1,13 +1,8 @@
-import Image, { StaticImageData } from "next/image";
+import { FeatureCardProps } from "@/types/FeatureCard";
+import Image from "next/image";
 import React from "react";
 
-type FeatureCardPropsType = {
-  title: string;
-  description: string;
-  icon: StaticImageData;
-};
-
-function FeatureCard({ title, description, icon }: FeatureCardPropsType) {
+function FeatureCard({ title, description, icon }: FeatureCardProps) {
   return (
     <div className="text-white flex flex-col justify-center items-center space-y-4 p-5 ">
       <div className="h-20 w-20 lg:h-28 lg:w-28 bg-white text-secondary rounded-full flex justify-center items-center">
