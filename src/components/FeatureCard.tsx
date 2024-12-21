@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import { IconType } from "react-icons";
 
 type FeatureCardPropsType = {
   title: string;

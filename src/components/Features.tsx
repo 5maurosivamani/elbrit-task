@@ -7,6 +7,7 @@ import flagIcon from "../assets/made-in.png";
 import gmoIcon from "../assets/gmo.png";
 import noRiskIcon from "../assets/no-risk.png";
 import shippingIcon from "../assets/shipping.png";
+import { keyGenerator } from "@/utils/generateId";
 
 const FeaturesData = [
   {
@@ -53,16 +54,24 @@ const FeaturesData = [
   },
 ];
 
+const keyGen = keyGenerator();
+
 function Features() {
   return (
     <div className="bg-secondary w-4/5 mx-auto rounded-[30px] md:rounded-[44px] grid xl:grid-cols-3 md:grid-cols-2 p-8 -mt-28">
-      {FeaturesData.map((feature) => (
-        <FeatureCard
-          title={feature.title}
-          description={feature.description}
-          icon={feature.icon}
-        />
-      ))}
+      {FeaturesData.map((feature) => {
+        const uniqueKey = keyGen.next().value;
+
+        return (
+          <React.Fragment key={uniqueKey}>
+            <FeatureCard
+              title={feature.title}
+              description={feature.description}
+              icon={feature.icon}
+            />
+          </React.Fragment>
+        );
+      })}
     </div>
   );
 }

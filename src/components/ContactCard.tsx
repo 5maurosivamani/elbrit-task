@@ -1,7 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import { IconType } from "react-icons";
-import { FaPhone } from "react-icons/fa";
 
 type CardPropType = {
   title: string;

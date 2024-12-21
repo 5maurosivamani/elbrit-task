@@ -9,7 +9,7 @@ type IngredientCardType = {
 };
 
 function IngredientCard({ title, description, image }: IngredientCardType) {
-  console.log(title, description);
+
   return (
     <div className="flex justify-center ">
       <div className="bg-accent text-primary  rounded-lg relative min-w-[300px]">

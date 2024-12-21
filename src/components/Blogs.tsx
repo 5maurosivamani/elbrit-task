@@ -3,8 +3,11 @@ import BlogCard from "./BlogCard";
 
 import blogOne from "../assets/blog1.png";
 import blogTwo from "../assets/blog2.png";
+import { keyGenerator } from "@/utils/generateId";
 
 function Blogs() {
+  const keyGen  = keyGenerator();
+
   return (
     <div className="min-h-screen">
       <div className="w-4/5 mx-auto py-10">
@@ -19,8 +22,9 @@ function Blogs() {
           {Array(4)
             .fill(0)
             .map((item, i) => {
+              const uniqueId = keyGen.next().value;
               return (
-                <div className="flex flex-col space-y-10">
+                <div className="flex flex-col space-y-10" key={uniqueId}>
                   <BlogCard image={blogOne} halfSize={i % 2 === 1} />
                   <BlogCard image={blogTwo} halfSize={i % 2 === 0} />
                 </div>
