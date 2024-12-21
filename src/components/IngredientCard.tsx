@@ -6,8 +6,8 @@ import React from "react";
 function IngredientCard({ title, description, image }: IngredientCardProps) {
 
   return (
-    <div className="flex justify-center ">
-      <div className="bg-accent text-primary  rounded-lg relative min-w-[300px]">
+    <div className="md:col-span-5 xl:col-span-3">
+      <div className="bg-accent text-primary  rounded-lg relative min-w-[300px] max-w-[380px] mx-auto md:mx-0">
         <Image src={image} alt={title} className="w-full h-full" />
         <div className="absolute top-0 left-0 h-full w-full p-8">
           <div className="flex flex-col justify-between h-full">

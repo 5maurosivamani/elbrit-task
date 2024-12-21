@@ -1,11 +1,11 @@
 import Image from "next/image";
-import logo from "../assets/logo.webp"
+import logo from "../assets/logo.webp";
 
 function Header() {
   return (
-    <header className="flex items-center py-3 px-10">
-      <Image src={logo} alt="Logo" width={200} height={100} />
-    </header>
+    <div className="flex items-center py-3 px-10 relative">
+      <Image src={logo} alt="Elbrit Logo" className="max-w-[180px] md:max-w-[250px]" />
+    </div>
   );
 }
 

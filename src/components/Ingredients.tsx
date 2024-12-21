@@ -41,8 +41,8 @@ const IngredientsData = [
 
 function Ingredients() {
   return (
-    <div className="w-4/5 mx-auto my-10 grid gap-5  xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 place-content-center">
-      <div className="text-primary  lg:col-span-2">
+    <div className="w-4/5 mx-auto my-10 grid md:grid-cols-10 gap-4 md:place-items-center lg:place-content-evenly">
+      <div className="text-primary md:col-span-5 xl:col-span-4">
         <h2 className="font-semibold mb-3">INGREDIENTS</h2>
         <h3 className="text-2xl lg:text-3xl font-semibold mb-4">Better Ingredients</h3>
         <p className="text-gray-600">
@@ -55,12 +55,33 @@ function Ingredients() {
           <IngredientCard {...item} />
         </React.Fragment>
       ))}
-      <div className="hidden lg:flex flex-col justify-end overflow-clip relative min-h-[200px] rounded-lg  ">
+      <div className="hidden xl:flex flex-col justify-end overflow-clip relative min-h-[200px] rounded-lg  ">
         <div className="h-48 w-48 rounded-full bg-sky-300 -translate-x-1/2 -translate-y-1/2 absolute"></div>
         <div className="h-24 w-24 rounded-full bg-orange-300"></div>
       </div>
     </div>
   );
+  // return (
+  //   <div className="w-4/5 mx-auto my-10 grid gap-5  xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 place-content-center">
+  //     <div className="text-primary  lg:col-span-2">
+  //       <h2 className="font-semibold mb-3">INGREDIENTS</h2>
+  //       <h3 className="text-2xl lg:text-3xl font-semibold mb-4">Better Ingredients</h3>
+  //       <p className="text-gray-600">
+  //         Only the best when you choose products offered on our platform
+  //         high-quality ingredients for high quality products!
+  //       </p>
+  //     </div>
+  //     {IngredientsData.map((item) => (
+  //       <React.Fragment key={item.id}>
+  //         <IngredientCard {...item} />
+  //       </React.Fragment>
+  //     ))}
+  //     <div className="hidden lg:flex flex-col justify-end overflow-clip relative min-h-[200px] rounded-lg  ">
+  //       <div className="h-48 w-48 rounded-full bg-sky-300 -translate-x-1/2 -translate-y-1/2 absolute"></div>
+  //       <div className="h-24 w-24 rounded-full bg-orange-300"></div>
+  //     </div>
+  //   </div>
+  // );
 }
 
 export default Ingredients;

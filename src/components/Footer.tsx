@@ -2,14 +2,14 @@ import Image from "next/image";
 import logo from "../assets/logo.webp";
 import ContactCard from "./ContactCard";
 import { FaLocationDot } from "react-icons/fa6";
-import phone from "../assets/phone.webp"
-import email from "../assets/email.webp"
-import location from "../assets/location.webp"
+import phone from "../assets/phone.webp";
+import email from "../assets/email.webp";
+import location from "../assets/location.webp";
 
 function Footer() {
   return (
-    <div className="bg-secondary p-5">
-      <div className="w-4/5 mx-auto flex flex-col space-y-6">
+    <div className="bg-secondary py-5 md:px-5">
+      <div className="w-5/6 md:w-4/5 mx-auto flex flex-col space-y-6">
         <div className="grid xl:grid-cols-3 md:grid-cols-2  gap-5">
           <ContactCard
             title="Phone Number"
@@ -27,11 +27,11 @@ function Footer() {
             icon={location}
           />
         </div>
-        <div className="flex flex-col space-x-4 w-full lg:flex-row xl:w-3/4">
-          <div className="bg-accent flex justify-center items-center px-1 w-full mb-5 sm:w-1/2 lg:w-full lg:mb-0">
+        <div className="flex flex-col space-y-4 w-full lg:flex-row xl:w-3/4 lg:space-y-0 lg:space-x-4">
+          <div className="bg-accent px-2 max-w-[180px] md:max-w-[250px]">
             <Image src={logo} alt="Elbrit Logo" className="w-full" />
           </div>
-          <p className="text-gray-200 leading-6">
+          <p className="text-gray-200">
             Your health, physical and emotional well-being is important to us.
             We are always by your side and have made it even easier for you to
             find the necessary vitamins.

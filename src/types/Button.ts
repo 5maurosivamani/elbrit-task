@@ -1,3 +1,3 @@
 export type ButtonProps = {
-    title: string;
-  };
+  title: string;
+} & React.ComponentProps<"button">;
